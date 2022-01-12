@@ -1,0 +1,17 @@
+spring:
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  thymeleaf:
+    template-loader-path: classpath:/templates
+    suffix: .html
+    cache: false
+  messages:
+    basename: validation
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    open-in-view: false
